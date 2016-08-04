@@ -17,12 +17,21 @@ h1 {
     margin-bottom: 10px;
 }
 
+h2 {
+    padding: 10px;
+    color: #4aaaa5;
+    margin: 0;
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 10px;  
+}
+
 section {
     padding: 10PX;
     margin-bottom: 10PX;
 }
 
-#container {
+.container {
     width: 960px;
     height: auto;
     margin-left: 20px;
@@ -74,21 +83,23 @@ section {
     float: right;
     color: #eee;
     text-align: center;
-    margin: 0;
+    margin: 5px;
     width: 250px;
-    height: 75px;
+    height: 55px;
+    bottom: 72px;
     font: 'Georgia', Times, Times New Roman, serif;
 }
 
 #connection {
     position: absolute;
-    left: 950px;
+    left: 840px;
+    right: 50px;
     float: right;
     color: #eee;
     text-align: center;
     margin: 0;
     width: 250px;
-    height: 75px;
+    height: 150px;
     font: 'Georgia', Times, Times New Roman, serif;
     font-size: 16px;
     color: #4aaaa5; 
@@ -116,24 +127,25 @@ section {
     margin-top: 65px;
     margin-left: 90px;
     background-color: #03C;
+    color: 000000;
     float: center;
     position: inherit;
 }
 
 #portfolio {
-    width: 50px;
-    height: 50px;
+    width: 10px;
+    height: 10px;
     position: inherit;
     color: #4aaaa5;
     background-color: #666;
-    float: left; 
-    clear: left;
+    float: center; 
+    clear: left; 
 }
 
 #RPG {
-    width: 50px;
-    height: 50px;
-    position: static;
+    width: 10px;
+    height: 10px;
+    position: inherit;
     color: #4aaaa5;
     background-color: #666; 
     float: right;
@@ -141,9 +153,9 @@ section {
 }
 
 #triviagame {
-    width: 50px;
-    height: 50px;
-    position: static;
+    width: 10px;
+    height: 10px;
+    position: inherit;
     color: #4aaaa5;
     background-color: #666; 
     float: left;
@@ -151,9 +163,9 @@ section {
 }
 
 #rutgersinfowidget {
-    width: 50px;
-    height: 50px;
-    position: static;
+    width: 10px;
+    height: 10px;
+    position: inherit;
     color: #4aaaa5;
     background-color: #666; 
     float: right;
@@ -161,9 +173,9 @@ section {
 }
 
 #RockPaperScissors  {
-    width: 50px;
-    height: 50px;
-    position: static;
+    width: 10px;
+    height: 10px;
+    position: inherit;
     color: #4aaaa5;
     background-color: #666; 
     float: left;
@@ -215,13 +227,15 @@ section {
 }
 
 #footer {
-  position: absolute;
   right: 0;
   bottom: 0;
-  left: 0;
-  padding: 1rem;
+  left: 165px;
+  padding: 1px;
   background-color: #efefef;
   text-align: center;
+  position: relative;
+  float: center;
+  clear: both;
 }
 
 aside {
