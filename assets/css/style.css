@@ -1,15 +1,15 @@
 body {
-    margin: 10px;
+    margin: 5px;
     padding: 0;
-    background: #eee;
     font-size: 18px;
     line-height: 160%;
     font-family: "Georgia",Times New Roman,Times,serif;
-    color: #333333;
+    background-color: #494e6b;
+    color: #d5d5d5;
 }
 
 h1 {
-    padding: 10px;
+    padding: 5px;
     color: #eee;
     margin: 0;
     font-size: 28px;
@@ -18,12 +18,17 @@ h1 {
 }
 
 h2 {
-    padding: 10px;
-    color: #4aaaa5;
+    padding: 5px;
+    color: #d7cec7;
     margin: 0;
     font-size: 25px;
     text-align: left;
-    margin-bottom: 10px;  
+    }
+
+h3 {
+    font-size: 18px;
+    margin: 0;
+    padding: 2px;
 }
 
 section {
@@ -31,28 +36,41 @@ section {
     margin-bottom: 10PX;
 }
 
+.section-heading {
+    text-align: center;
+    font-size: 25px;
+}
+
+.section-subheading {
+    text-align: center;
+    font-size: 20px;
+}
+
+.nav-wrapper {
+    background-color: #98878f;
+}
+
 .container {
-    width: 960px;
+    width: auto;
     height: auto;
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: auto;
-    left: 90px;
-    right: 90px;
+    left: 40px;
+    right: 40px;
     float: center;
 }
 
 #header {
-    position: relative;
-    background: #4aaaa5;
-    padding: 10px;
+    position: static;
+    background: #333a56;
+    padding: 5px;
     text-align: left;
     margin: 0;
     top: 0;
     left: 90px;
-    width: 250px;
-    height: 70px;
-    color: #777777;
+    width: 300px;
+    height: auto;
+    color: #FFFFFF;
     font: 'Georgia', Times, Times New Roman, serif;
 }
 
@@ -70,11 +88,10 @@ section {
     font: 'Georgia', Times, Times New Roman, serif;
 }
 
-#bio-image {
-    float: left;
-    width: 200px;
-    height: 200px;
-    margin-right: 20px;
+.responsive-img {
+    float: center;
+    width: 250px;
+    height: 250px;
 }
 
 #navigation {
@@ -90,28 +107,6 @@ section {
     font: 'Georgia', Times, Times New Roman, serif;
 }
 
-#connection {
-    position: absolute;
-    left: 840px;
-    right: 50px;
-    float: right;
-    color: #eee;
-    text-align: center;
-    margin: 0;
-    width: 250px;
-    height: 150px;
-    font: 'Georgia', Times, Times New Roman, serif;
-    font-size: 16px;
-    color: #4aaaa5; 
-    background: #FFFFFF;  
-}
-
-#connection-image {
-    float: center;
-    width: 50px;
-    height: 50px;
-}
-
 #background {
     position: relative;
     background: #4aaaa5;
@@ -125,7 +120,7 @@ section {
     width: 650px;
     height: 20000px;
     margin-top: 65px;
-    margin-left: 90px;
+    margin-left: 30px;
     background-color: #03C;
     color: 000000;
     float: center;
@@ -140,6 +135,26 @@ section {
     background-color: #666;
     float: center; 
     clear: left; 
+    font-size: 15px;
+}
+
+#connection {
+    float: center;
+    color: #eee;
+    text-align: center;
+    margin: 0;
+    border-color: #4aaaa5;
+    width: 300px;
+    height: auto;
+    font: 'Georgia', Times, Times New Roman, serif;
+    font-size: 16px;
+    background: #6d7993;  
+}
+
+#connection-image {
+    float: center;
+    width: 50px;
+    height: 50px;
 }
 
 #RPG {
@@ -229,21 +244,32 @@ section {
 #footer {
   right: 0;
   bottom: 0;
-  left: 165px;
   padding: 1px;
-  background-color: #efefef;
+  background: #192231;
   text-align: center;
-  position: relative;
+  position: inherit;
   float: center;
   clear: both;
 }
 
-aside {
-    float: left;
-    width: 33.3%;
-    margin-left: 30px;
-    padding: 20px;
-    height: 200px;
-    background: #fff;
-    border: 1px solid #eee;
+ body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+@media screen and (max-width: 980px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 640px) {
+    
 }

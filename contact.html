@@ -2,47 +2,55 @@
 	<html>
 		<head>
 			<title>Matthew Lin's Portfolio</title>
-			<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-			<link rel="stylesheet" type="text/css" href="assets/css/800px.css" media="screen and (max-width: 800px)">
-			<link rel="stylesheet" type="text/css" href="assets/css/menu.css">
-			<link rel="stylesheet" type="text/css" href="assets/css/form.css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
 		</head>
 		
-	<body>
-		<div id="header">
-			<h1>Matthew Lin</h1>
-			<section id="navigation">
-				<ul>
-					<li><a href="#">Portfolio</a></li>		
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</section>
-		</div>
+	<main>
+		<nav>
+		<div class="nav-wrapper">
+          <a href="#" class="brand">Matthew Lin's Portfolio</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="active"><a href="index.html">About</a></li>
+            <li class="active"><a href="portfolio.html">Portfolio</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+	  </nav>
 		<div class="container">
-			<div id="connection">
-				<h3>Connect With Me</h3>
-				<a href="https://github.com/mlin2814">
-					<img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-128.png" alt="GitHub" id="connection-image">
-				</a>
-				<a href="https://www.linkedin.com/in/matthew-lin-75970890"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-linkedin-128.png" alt="linkedin" id="connection-image">
-				</a>
-				<a href=""><img src="https://cdn4.iconfinder.com/data/icons/miu-square-flat-social/60/stackoverflow-square-social-media-128.png" alt="StackOverflow" id="connection-image">
-				</a>
+			<div class="row">
+				<div class="col s4 m6 l9">
+					<section class=".form-group-sm">
+						<form>
+						  Full Name:<br>
+						  <input type="text" name="fullname"><br>
+						  Email:<br>				  
+						  <input type="text" name="email"><br>
+						  Message:<br>
+						  <textarea id="styled"></textarea>
+						</form>
+					</section>
+				</div>
+				<div class="col s2 m4 l3">
+					<div id="connection">
+                            <h3>Connect With Me</h3>
+                                <div class=".img-thumbnail">
+                                    <a href="https://github.com/mlin2814">
+                                        <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-128.png" alt="GitHub" id="connection-image" style="width: 50px; height: 50px;">
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/matthew-lin-75970890">
+                                        <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-linkedin-128.png" alt="linkedin" id="connection-image" style="width:50px; height: 50px;">
+                                    </a>
+                                    <a href="">
+                                        <img src="https://cdn4.iconfinder.com/data/icons/miu-square-flat-social/60/stackoverflow-square-social-media-128.png" alt="StackOverflow" id="connection-image" style="width:50px; height: 50px;">
+                                    </a>
+                                </div>
+                        </div>
 			</div>
-			<section class="formbody">
-				<form>
-				  Full Name:<br>
-				  <input type="text" name="fullname"><br>
-				  Email:<br>				  
-				  <input type="text" name="email"><br>
-				  Message:<br>
-				  <textarea id="styled"></textarea>
-				</form>
-			</section>
 		</div>
-			<div id="footer">
-				Copyright 2016 Matthew Lin
-			</div>
-	</body>
-	</html>
+	</main>
+	<footer class="page-footer" id="footer">
+        Copyright Matthew Lin 2016  
+    </footer>
+</html>
